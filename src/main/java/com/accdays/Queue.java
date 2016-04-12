@@ -2,6 +2,7 @@ package com.accdays;
 
 /**
  * 队列
+ * 先进先出FIFO
  * @author hedong
  * @date 2016年4月10日 下午10:07:51
  * @modifyNote
