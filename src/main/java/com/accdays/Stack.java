@@ -2,6 +2,7 @@ package com.accdays;
 
 /**
  * 栈
+ * jdk中已经有java.util.Stack<E>
  * @author hedong
  * @date 2016年4月10日 下午4:14:48
  * @modifyNote
