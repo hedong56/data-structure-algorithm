@@ -19,7 +19,6 @@ public class QuickSort {
 	
 	
 	/**
-	 * 
 	 * @Description
 	 * @author hedong
 	 * @date 2016年6月26日 下午4:00:34
