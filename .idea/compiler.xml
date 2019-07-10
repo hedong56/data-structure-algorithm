@@ -6,13 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dataStruAndAlgo" />
         <module name="data-structure-algorithm" />
+        <module name="dataStruAndAlgo" />
+        <module name="design-pattern" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="data-structure-algorithm" target="1.11" />
       <module name="dataStruAndAlgo" target="1.11" />
+      <module name="design-pattern" target="1.11" />
       <module name="parent" target="1.11" />
     </bytecodeTargetLevel>
   </component>
