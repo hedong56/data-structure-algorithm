@@ -15,7 +15,7 @@ public class Binary {
 
     public static void main(String[] args) {
         int[] arr = {10, 20, 30, 40, 50, 60, 70, 80, 90};
-        int target = 15;
+        int target = 100;
         System.out.println(testBinarySearch(arr, target));
     }
 
@@ -28,27 +28,29 @@ public class Binary {
             return result;
         }
 
-        int left = 0;
-        int right = arr.length - 1;
-        int mid = arr.length / 2;
+        int start = 0;
+        int end = arr.length - 1;
 
-        while (mid != left && mid != right) {
+
+        while (start <= end) {
+
+            //除以2 ，也可以用位移 无符号右移>>>
+            int mid = (start + end) / 2;
 
             if (arr[mid] == target) {
 
                 result = mid;
                 break;
 
+            //中间值大于目标值，说明在左面，
+            //那么结束值可以用end=mid；但是mid已经比较过，所以mid-1
             } else if (arr[mid] > target) {
 
-                right = mid;
-                mid = (left + mid) / 2;
-
+                end = mid - 1;
 
             } else {
 
-                left = mid;
-                mid = (mid + right) / 2;
+                start = mid + 1;
 
             }
 
