@@ -36,7 +36,9 @@ public class AnonymousInner {
     }
 
     public static void main(String[] args) {
-        new AnonymousInner().outerMehthod();
+        AnonymousInner ai=new AnonymousInner();
+        System.out.println(ai.hashCode());
+        ai.outerMehthod();
     }
 
 
